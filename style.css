@@ -1,0 +1,27 @@
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 10px; /* Tạo khoảng cách giữa các mục */
+}
+
+.menu ul li:last-child {
+  margin-right: 0; /* Loại bỏ khoảng cách bên phải của mục cuối cùng */
+}
+.left-content {
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+}
+
+.homepage-button {
+  margin-bottom: 10px; /* Tạo khoảng cách giữa button và phần nội dung */
+}
+
+.latest-news {
+  margin-top: auto; /* Đặt margin-top thành auto để đẩy ul xuống dưới cùng */
+}
