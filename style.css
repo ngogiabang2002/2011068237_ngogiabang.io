@@ -1,27 +1,190 @@
+.login {
+  margin-left: 300px;
+  display: flex;
+  margin-right: 180px;
+}
+
+.login button {
+  width: 110px;
+  height: 32px;
+  margin: 5px;
+  font-size: 14px; /* Adjust the font size as needed */
+}
+.login input.form-control {
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 6px 10px; /* Adjust the padding as needed */
+  width: 200px;
+}
+
+.contact::after {
+  content: "|"; /* Add the vertical bar */
+  margin-left: 10px; /* Adjust the spacing */
+  margin-right: 10px; /* Adjust the spacing */
+  color: #ccc; /* Color of the vertical bar */
+}
+
+/* Styling for the header */
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+/* Remove margins and paddings */
+.contact, .list-inline {
+  margin: 0;
+  padding: 0;
+}
+/* Adjustments for logo */
+.logo {
+  display: flex;
+  justify-content: center; /* Center align the images */
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.logo img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */ /* Add spacing between images */
+}
+
+/* Styling for the menu */
+.menu {
+  display: flex;
+  justify-content: center; /* Center align the menu */
+  padding: 20px; /* Adjust padding as needed */
+}
 
 .menu ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
 }
 
 .menu ul li {
-  margin-right: 10px; /* Tạo khoảng cách giữa các mục */
+  margin-right: 20px; /* Adjust spacing between menu items */
 }
 
 .menu ul li:last-child {
-  margin-right: 0; /* Loại bỏ khoảng cách bên phải của mục cuối cùng */
+  margin-right: 0; /* Remove margin for the last menu item */
 }
-.left-content {
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333; /* Adjust link color */
+  white-space: nowrap; /* Prevent text wrapping */
+  text-align: center;
+  margin-right: 9px;
+    margin-left: -10px;
+    justify-content: center; /* Center align the images */
+}
+
+
+.menu ul li:not(:last-child):after {
+  content: "|";
+  margin-left: 5px; /* Adjust spacing between the pipe separator and menu items */
+  color: #333; /* Adjust separator color */
+}
+
+.content {
   display: flex;
-  flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+  justify-content: space-between;
 }
 
-.homepage-button {
-  margin-bottom: 10px; /* Tạo khoảng cách giữa button và phần nội dung */
+.left-content,
+.right-content {
+  flex: 1;
+  margin: 0 10px; /* Adjust margins as needed */
 }
 
-.latest-news {
-  margin-top: auto; /* Đặt margin-top thành auto để đẩy ul xuống dưới cùng */
+.tin-tuc {
+  flex: 0 0 auto; /* Set flex-grow, flex-shrink, and flex-basis to 'auto' */
+  max-width: 250px; /* Adjust the maximum width as needed */
+  margin: 0 10px; /* Adjust margins as needed */
+}
+
+
+.news-item,
+.goc-nhin {
+  margin-bottom: 20px; /* Adjust margins as needed */
+}
+/* Add ellipsis for long text */
+/* Add vertical lines between sections */
+.content > div:not(:last-child),
+.content > section:not(:last-child) {
+  border-right: 1px solid #ccc; /* Adjust color as needed */
+  padding-right: 10px; /* Adjust spacing between sections */
+}
+/* Ensure links are visible */
+.news-item a {
+  color: #000; /* Set link color to black or adjust as needed */
+}
+
+/* Add ellipsis for long text */
+.news-item p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 10px; /* Add some margin at the bottom */
+}
+
+.TT {
+  list-style: none; /* Remove the default list style */
+  padding-left: 0; /* Remove default padding */
+}
+
+.TT li {
+  margin-bottom: 10px; /* Add some margin between list items */
+}
+
+.TT li a {
+  color: #000; /* Set the color of the text to black or adjust as needed */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make the text bold */
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
+.content {
+  margin-left: 180px;
+}
+.Thatthu{
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+img.anhtg {
+  /* size: 55px; */
+  /* margin-left: 25px; */
+  width: 117px;
+}
+.home-button {
+  background-color: #f8f9fa; /* Màu nền xám */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.home-button i {
+  color: #6c757d; /* Màu xám cho biểu tượng */
+  margin-right: 5px;
+}
+.icon {
+  display: flex;
+  text-align: left;
+}
+.icon img{
+ height: 30px;
+}
+.banner {
+  display: flex;
+}
+.banner p{
+  padding: 2px;
 }
